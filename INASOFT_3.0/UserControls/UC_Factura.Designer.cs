@@ -39,12 +39,13 @@ namespace INASOFT_3._0.UserControls
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtNewInvoice = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchMonth = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchDate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFacturaCliente = new Guna.UI2.WinForms.Guna2Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.verDetallesDeLaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRango = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFatura)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
@@ -141,9 +142,10 @@ namespace INASOFT_3._0.UserControls
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.Controls.Add(this.guna2Button3);
-            this.guna2GroupBox2.Controls.Add(this.guna2Button2);
-            this.guna2GroupBox2.Controls.Add(this.guna2Button1);
+            this.guna2GroupBox2.Controls.Add(this.btnRango);
+            this.guna2GroupBox2.Controls.Add(this.btnSearchMonth);
+            this.guna2GroupBox2.Controls.Add(this.btnSearchDate);
+            this.guna2GroupBox2.Controls.Add(this.btnFacturaCliente);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(123)))), ((int)(((byte)(200)))));
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins", 12F);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
@@ -153,59 +155,62 @@ namespace INASOFT_3._0.UserControls
             this.guna2GroupBox2.TabIndex = 5;
             this.guna2GroupBox2.Text = "Buscar Facturas";
             // 
-            // guna2Button3
+            // btnSearchMonth
             // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(29, 186);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(253, 49);
-            this.guna2Button3.TabIndex = 3;
-            this.guna2Button3.Text = "Buscar por Mes";
+            this.btnSearchMonth.BorderRadius = 10;
+            this.btnSearchMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSearchMonth.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchMonth.ForeColor = System.Drawing.Color.White;
+            this.btnSearchMonth.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchMonth.Image")));
+            this.btnSearchMonth.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSearchMonth.Location = new System.Drawing.Point(29, 186);
+            this.btnSearchMonth.Name = "btnSearchMonth";
+            this.btnSearchMonth.Size = new System.Drawing.Size(253, 49);
+            this.btnSearchMonth.TabIndex = 3;
+            this.btnSearchMonth.Text = "Buscar por Mes";
+            this.btnSearchMonth.Click += new System.EventHandler(this.btnSearchMonth_Click);
             // 
-            // guna2Button2
+            // btnSearchDate
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(29, 119);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(253, 49);
-            this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "Buscar Por Fecha";
+            this.btnSearchDate.BorderRadius = 10;
+            this.btnSearchDate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchDate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSearchDate.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchDate.ForeColor = System.Drawing.Color.White;
+            this.btnSearchDate.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchDate.Image")));
+            this.btnSearchDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSearchDate.Location = new System.Drawing.Point(29, 119);
+            this.btnSearchDate.Name = "btnSearchDate";
+            this.btnSearchDate.Size = new System.Drawing.Size(253, 49);
+            this.btnSearchDate.TabIndex = 2;
+            this.btnSearchDate.Text = "Buscar Por Fecha";
+            this.btnSearchDate.Click += new System.EventHandler(this.btnSearchDate_Click);
             // 
-            // guna2Button1
+            // btnFacturaCliente
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(29, 54);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(253, 49);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Buscar Por Cliente";
+            this.btnFacturaCliente.BorderRadius = 10;
+            this.btnFacturaCliente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturaCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFacturaCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFacturaCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFacturaCliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFacturaCliente.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturaCliente.ForeColor = System.Drawing.Color.White;
+            this.btnFacturaCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnFacturaCliente.Image")));
+            this.btnFacturaCliente.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnFacturaCliente.Location = new System.Drawing.Point(29, 54);
+            this.btnFacturaCliente.Name = "btnFacturaCliente";
+            this.btnFacturaCliente.Size = new System.Drawing.Size(253, 49);
+            this.btnFacturaCliente.TabIndex = 1;
+            this.btnFacturaCliente.Text = "Buscar Por Cliente";
+            this.btnFacturaCliente.Click += new System.EventHandler(this.btnFacturaCliente_Click);
             // 
             // contextMenuStrip1
             // 
@@ -231,6 +236,25 @@ namespace INASOFT_3._0.UserControls
             this.eliminarFacturaToolStripMenuItem.Size = new System.Drawing.Size(256, 30);
             this.eliminarFacturaToolStripMenuItem.Text = "Eliminar Factura";
             this.eliminarFacturaToolStripMenuItem.Click += new System.EventHandler(this.eliminarFacturaToolStripMenuItem_Click);
+            // 
+            // btnRango
+            // 
+            this.btnRango.BorderRadius = 10;
+            this.btnRango.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRango.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRango.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRango.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRango.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnRango.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRango.ForeColor = System.Drawing.Color.White;
+            this.btnRango.Image = ((System.Drawing.Image)(resources.GetObject("btnRango.Image")));
+            this.btnRango.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnRango.Location = new System.Drawing.Point(29, 253);
+            this.btnRango.Name = "btnRango";
+            this.btnRango.Size = new System.Drawing.Size(253, 49);
+            this.btnRango.TabIndex = 4;
+            this.btnRango.Text = "Buscar por Rango de Fecha";
+            this.btnRango.Click += new System.EventHandler(this.btnRango_Click);
             // 
             // UC_Factura
             // 
@@ -260,11 +284,12 @@ namespace INASOFT_3._0.UserControls
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Button txtNewInvoice;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnSearchMonth;
+        private Guna.UI2.WinForms.Guna2Button btnSearchDate;
+        private Guna.UI2.WinForms.Guna2Button btnFacturaCliente;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem verDetallesDeLaFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarFacturaToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button btnRango;
     }
 }

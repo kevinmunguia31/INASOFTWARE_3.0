@@ -177,6 +177,12 @@
     <Compile Include="UserControls\UC_Usuarios.Designer.cs">
       <DependentUpon>UC_Usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="VistaFacturas\DetailsInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaFacturas\DetailsInvoice.Designer.cs">
+      <DependentUpon>DetailsInvoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="VistaFacturas\DetalleFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,30 @@
     </Compile>
     <Compile Include="VistaFacturas\Facturar1.Designer.cs">
       <DependentUpon>Facturar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceClient.Designer.cs">
+      <DependentUpon>SearchInvoiceClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceDate.Designer.cs">
+      <DependentUpon>SearchInvoiceDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceMonth.Designer.cs">
+      <DependentUpon>SearchInvoiceMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaFacturas\SearchInvoiceRange.Designer.cs">
+      <DependentUpon>SearchInvoiceRange.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ADDEDIT.resx">
       <DependentUpon>ADDEDIT.cs</DependentUpon>
@@ -234,6 +264,9 @@
     <EmbeddedResource Include="UserControls\UC_Usuarios.resx">
       <DependentUpon>UC_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VistaFacturas\DetailsInvoice.resx">
+      <DependentUpon>DetailsInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VistaFacturas\DetalleFactura.resx">
       <DependentUpon>DetalleFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +275,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaFacturas\Facturar1.resx">
       <DependentUpon>Facturar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaFacturas\SearchInvoiceClient.resx">
+      <DependentUpon>SearchInvoiceClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaFacturas\SearchInvoiceDate.resx">
+      <DependentUpon>SearchInvoiceDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaFacturas\SearchInvoiceMonth.resx">
+      <DependentUpon>SearchInvoiceMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaFacturas\SearchInvoiceRange.resx">
+      <DependentUpon>SearchInvoiceRange.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\INASOFT_3._0.Modelos.Cliente.datasource" />

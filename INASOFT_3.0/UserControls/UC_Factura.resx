@@ -163,7 +163,17 @@
         +PfwvS9zr4pg/78LkNM033LlW/Num1+cAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRango.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAD7SURBVFhH7ZRbDoMgEEVdQL+t6Ub72X52gU0fq2kvcCCxSkaFRJt4kgnM5TIZwNjs7EzhA6Qm
+        2Cf7B7C/OpS3wV8dytvgTxtIFz8B6fIGSqHc/AZqQ3kb/NWhvA3+9Z+AtBjK1WlA8oHpgNyaLyZIbfAP
+        Nkg6Ku6KG1JC2lXxVpyQEtI8pDb4exuUdoqnXwhjOq2boznc2LHkCXJBA5rGkzteirFTtoro6d1EkBY2
+        oMEVfnhhHm5P+1tvEvi30YBD0+z1RqRlnylIBQ04lK73EUYkxZu4ICWknRW5D9RDaoN/dIPk9X5ES6Hc
+        HzZQG8rb4K8O5Xd2tkTTfAHJH2w50+3kxwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSearchMonth.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAyJJREFUeF7t
         mkFu1EAQRbOCO8BBsgB27BDnCRdACdyHDRIgEbGGQ5AsYAcrJCRT5X4p4fG03dV2j9tKP6nF1K/u39/F
@@ -182,7 +192,7 @@
         Hqf40LMU0Q9TG/eXs7N/HaSUaM86tyUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSearchDate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAB1xJREFUeF7t
         m3eIXFUUhzO2mKgxBuwVGyQKVhRNIhgE2x8m/iESDWrs+odoFBNjwRIUJcao2DDEaBRUbIhibEGxILHG
@@ -219,7 +229,7 @@
         1MvuQMCx1/0/pSENSQ0b9j9qkPDxEEOe8QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnFacturaCliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABu9JREFUeF7t
         m+mvXVMYxjvpjLbSopPQxBApmgi+EE0TqoMai0gRInyooQhSpUKktCQVH0wlwR9AUmlramkJWrOg5nlI

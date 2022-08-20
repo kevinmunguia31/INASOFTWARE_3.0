@@ -67,5 +67,29 @@ namespace INASOFT_3._0.UserControls
             }
 
         }
+
+        private void btnFacturaCliente_Click(object sender, EventArgs e)
+        {
+            SearchInvoiceClient frm = new SearchInvoiceClient();
+            frm.ShowDialog();
+        }
+
+        private void btnSearchDate_Click(object sender, EventArgs e)
+        {
+            SearchInvoiceDate frm = new SearchInvoiceDate();
+            frm.ShowDialog();
+        }
+
+        private void btnSearchMonth_Click(object sender, EventArgs e)
+        {
+            SearchInvoiceMonth frm = new SearchInvoiceMonth();
+            frm.ShowDialog();
+        }
+
+        private void btnRango_Click(object sender, EventArgs e)
+        {
+            SearchInvoiceRange frm = new SearchInvoiceRange();
+            frm.ShowDialog();
+        }
     }
 }
