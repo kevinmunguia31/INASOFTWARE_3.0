@@ -20,6 +20,7 @@ namespace INASOFT_3._0.VistaFacturas
             string fecha = DateTime.Today.Year.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Day.ToString();
             string hora = DateTime.Now.ToString("hh:mm:ss");
             lbFecha.Text = fecha + " " + hora;
+            txtIdUser.Text = Sesion.id.ToString();
         }
 
 
@@ -64,7 +65,7 @@ namespace INASOFT_3._0.VistaFacturas
 
         private void btnAddCliente_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO clientes (nombre) VALUES('" + txtNombre.Text + "')";
+            string sql = "INSERT INTO clientes VALUES('" + txtNombre.Text + "', 'Ninguno', 'Ninguno', 'Ninguno')";
             try
             {
                 MySqlConnection conexioBD = Conexion.getConexion();

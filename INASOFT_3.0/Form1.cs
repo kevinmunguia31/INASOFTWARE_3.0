@@ -119,5 +119,11 @@ namespace INASOFT_3._0
             UC_Factura uc = new UC_Factura();
             addUserControl(uc);
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            UC_Settings uc = new UC_Settings();
+            addUserControl(uc);
+        }
     }
 }

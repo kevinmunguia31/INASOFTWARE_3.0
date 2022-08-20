@@ -169,6 +169,7 @@ namespace INASOFT_3._0
             this.btnSettings.Size = new System.Drawing.Size(176, 45);
             this.btnSettings.TabIndex = 7;
             this.btnSettings.Text = "Configuraciones";
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnUser
             // 

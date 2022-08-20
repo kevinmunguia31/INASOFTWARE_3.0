@@ -16,8 +16,8 @@ namespace INASOFT_3._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Principal());
-            Application.Run(new VistaFacturas.FacturaFinal());
+            Application.Run(new Login());
+           // Application.Run(new VistaFacturas.FacturaFinal());
         }
     }
 }

@@ -250,9 +250,14 @@ namespace INASOFT_3._0.VistaFacturas
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            FacturaFinal frm = new FacturaFinal();
             
+            FacturaFinal frm = new FacturaFinal();
+            frm.lbIdFactura.Text = lbIdFactura.Text;
+            frm.lbNombreCliente.Text = lbClienteName.Text;
+            frm.lbSubtotal.Text = lbSubtotal.Text;
+            frm.txtIdCliente.Text = txtIdCliente.Text;
+            frm.ShowDialog();
+            this.Dispose();
         }
     }
 }

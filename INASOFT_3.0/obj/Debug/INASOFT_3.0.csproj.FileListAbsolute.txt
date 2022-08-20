@@ -45,3 +45,4 @@ C:\Users\Kevin Munguia\source\repos\INASOFT_3.0\INASOFT_3.0\obj\Debug\INASOFT_3.
 C:\Users\Kevin Munguia\source\repos\INASOFT_3.0\INASOFT_3.0\obj\Debug\INASOFT_3._0.VistaFacturas.Facturar1.resources
 C:\Users\Kevin Munguia\source\repos\INASOFT_3.0\INASOFT_3.0\obj\Debug\INASOFT_3._0.VistaFacturas.DetalleFactura.resources
 C:\Users\Kevin Munguia\source\repos\INASOFT_3.0\INASOFT_3.0\obj\Debug\INASOFT_3._0.VistaFacturas.FacturaFinal.resources
+C:\Users\Kevin Munguia\source\repos\INASOFT_3.0\INASOFT_3.0\obj\Debug\INASOFT_3._0.UserControls.UC_Settings.resources

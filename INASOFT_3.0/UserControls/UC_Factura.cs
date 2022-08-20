@@ -46,5 +46,26 @@ namespace INASOFT_3._0.UserControls
             Facturar1 facturar = new Facturar1();
             facturar.ShowDialog();
         }
+
+        private void eliminarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id_factura = int.Parse(dataGridFatura.CurrentRow.Cells[0].Value.ToString());
+            string sql = "CALL Eliminar_Factura('" + id_factura + "')";
+            try
+            {
+                MySqlConnection conexioBD = Conexion.getConexion();
+                conexioBD.Open();
+                MySqlCommand comando = new MySqlCommand(sql, conexioBD);
+                comando.ExecuteNonQuery();
+                MessageDialogInfo.Show("Se elimino la Factura Seleccionada", "Eliminar Factura");
+                Facturas();
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+
+        }
     }
 }
