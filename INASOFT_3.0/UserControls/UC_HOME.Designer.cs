@@ -39,9 +39,19 @@ namespace INASOFT_3._0.UserControls
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbhora = new System.Windows.Forms.Label();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbTotalHoy = new System.Windows.Forms.Label();
+            this.lbdate = new System.Windows.Forms.Label();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lbCantInvoice = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.guna2GroupBox1.SuspendLayout();
+            this.guna2GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,7 +102,7 @@ namespace INASOFT_3._0.UserControls
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(939, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(939, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -108,7 +118,7 @@ namespace INASOFT_3._0.UserControls
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1230, 17);
+            this.pictureBox3.Location = new System.Drawing.Point(1235, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -127,10 +137,96 @@ namespace INASOFT_3._0.UserControls
             this.lbhora.TabIndex = 5;
             this.lbhora.Text = "Name";
             // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.Controls.Add(this.lbTotalHoy);
+            this.guna2GroupBox1.Controls.Add(this.label2);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.MediumPurple;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins", 11F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 86);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.Size = new System.Drawing.Size(360, 162);
+            this.guna2GroupBox1.TabIndex = 7;
+            this.guna2GroupBox1.Text = "Efectivo Facturado Hoy";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Poppins", 40F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(3, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 95);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "C$";
+            // 
+            // lbTotalHoy
+            // 
+            this.lbTotalHoy.AutoSize = true;
+            this.lbTotalHoy.BackColor = System.Drawing.Color.White;
+            this.lbTotalHoy.Font = new System.Drawing.Font("Poppins", 35F);
+            this.lbTotalHoy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbTotalHoy.Location = new System.Drawing.Point(99, 58);
+            this.lbTotalHoy.Name = "lbTotalHoy";
+            this.lbTotalHoy.Size = new System.Drawing.Size(135, 82);
+            this.lbTotalHoy.TabIndex = 1;
+            this.lbTotalHoy.Text = "0.00";
+            // 
+            // lbdate
+            // 
+            this.lbdate.AutoSize = true;
+            this.lbdate.Location = new System.Drawing.Point(468, 17);
+            this.lbdate.Name = "lbdate";
+            this.lbdate.Size = new System.Drawing.Size(35, 13);
+            this.lbdate.TabIndex = 8;
+            this.lbdate.Text = "label3";
+            this.lbdate.Visible = false;
+            // 
+            // guna2GroupBox2
+            // 
+            this.guna2GroupBox2.Controls.Add(this.pictureBox4);
+            this.guna2GroupBox2.Controls.Add(this.lbCantInvoice);
+            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.MediumPurple;
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins", 11F);
+            this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
+            this.guna2GroupBox2.Location = new System.Drawing.Point(406, 86);
+            this.guna2GroupBox2.Name = "guna2GroupBox2";
+            this.guna2GroupBox2.Size = new System.Drawing.Size(322, 162);
+            this.guna2GroupBox2.TabIndex = 8;
+            this.guna2GroupBox2.Text = "Cantida de Facturas Realizadas Hoy";
+            // 
+            // lbCantInvoice
+            // 
+            this.lbCantInvoice.AutoSize = true;
+            this.lbCantInvoice.BackColor = System.Drawing.Color.White;
+            this.lbCantInvoice.Font = new System.Drawing.Font("Poppins", 35F);
+            this.lbCantInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbCantInvoice.Location = new System.Drawing.Point(99, 58);
+            this.lbCantInvoice.Name = "lbCantInvoice";
+            this.lbCantInvoice.Size = new System.Drawing.Size(135, 82);
+            this.lbCantInvoice.TabIndex = 1;
+            this.lbCantInvoice.Text = "0.00";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(29, 58);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // UC_HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2GroupBox2);
+            this.Controls.Add(this.lbdate);
+            this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lbhora);
             this.Controls.Add(this.pictureBox2);
@@ -144,6 +240,11 @@ namespace INASOFT_3._0.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.guna2GroupBox1.ResumeLayout(false);
+            this.guna2GroupBox1.PerformLayout();
+            this.guna2GroupBox2.ResumeLayout(false);
+            this.guna2GroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +260,12 @@ namespace INASOFT_3._0.UserControls
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lbhora;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private System.Windows.Forms.Label lbTotalHoy;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbdate;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lbCantInvoice;
     }
 }
