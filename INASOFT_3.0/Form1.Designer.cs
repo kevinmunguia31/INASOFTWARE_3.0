@@ -213,6 +213,7 @@ namespace INASOFT_3._0
             this.btnReport.Size = new System.Drawing.Size(161, 45);
             this.btnReport.TabIndex = 5;
             this.btnReport.Text = "Reportes";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnProvider
             // 
